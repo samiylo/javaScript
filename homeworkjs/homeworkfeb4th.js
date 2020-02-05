@@ -63,4 +63,24 @@ function printNumbers (start, end) {
     
     }
 
-printNumbers(1,10)
+// printNumbers(1,10)
+
+// Qwestion 5
+
+function printSquare (size) {
+    let counter = 0
+    while (counter < size) {
+        let width = 0
+        var ast = []
+        while (width < size) {
+            ast.push('*')
+            width ++;
+        }
+        finalString = ast.join(',')
+        console.log(finalString)
+        counter++;
+    }
+
+
+}
+printSquare(4)
