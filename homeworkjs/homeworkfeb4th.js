@@ -48,3 +48,19 @@ function totalAmount (bill, service) {
 
     }
 }
+
+// Qwestion 4
+
+function printNumbers (start, end) {
+    var i = start
+    
+    while (i < end) {
+        console.log(i)
+        i++;
+        
+    }
+    
+    
+    }
+
+printNumbers(1,10)
