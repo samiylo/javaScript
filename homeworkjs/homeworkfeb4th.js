@@ -76,7 +76,7 @@ function printSquare (size) {
             ast.push('*')
             width ++;
         }
-        finalString = ast.join(',')
+        finalString = ast.join(' ')
         console.log(finalString)
         counter++;
     }
@@ -84,3 +84,6 @@ function printSquare (size) {
 
 }
 printSquare(4)
+
+// Qwestion 6
+
