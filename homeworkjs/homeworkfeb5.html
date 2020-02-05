@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .header {
+            display: flex;
+            background-color: cornflowerblue;
+            min-height: 100px;
+            width: 100%;
+        }
+
+        .title {
+            margin-top: 25px;
+            margin-left: 25px;
+            color: cornsilk;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+
+    </div>
+
+<script>
+    // =================================================== Start Header
+    var header = document.createElement("div");
+    
+
+    var containerVar = document.querySelector("#container");
+    console.log(containerVar)
+    containerVar.append(header);
+
+    header.setAttribute("class", "header")
+
+    // Start Title Logo
+
+    var title = document.createElement("div");
+    title.textContent = "HighOnCoding"
+    title.setAttribute("class", "title")
+
+    header.append(title)
+
+    // =================================================== End Header
+
+</script>
+</body>
+</html>
