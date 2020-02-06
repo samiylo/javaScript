@@ -1,14 +1,23 @@
 // ============================================= Homework Thursday Feb 6th
 
-// Assignment 1 -  Positive Numbers
+// ===================Assignment 1 -  Positive Numbers
 
-function positiveNums (array) {
+// function positiveNums (array) {
+//     let newArray = array.filter(function(num) {
+//         return num > 0
+//     })
+//     return newArray
+// }
+
+// console.log(positiveNums([1,2,3, -9, -46]))
+
+// ==================Assignment 2 - Even Numbers
+
+function evenNums (array) {
     let newArray = array.filter(function(num) {
-
-        return num > 0
+        
+        return num % 2 == 0
     })
     return newArray
 }
-
-
-console.log(positiveNums([1,2,3, -9, -46]))
+console.log(evenNums([1,2,3, -9, 4, 6]))
