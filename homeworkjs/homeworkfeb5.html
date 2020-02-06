@@ -84,17 +84,23 @@
 
     containerVar.append(reviewsContainer)
 
-// Practice Function
+// Practice Function 
+// --------- This function creates a new element that I can append to a container or another element
 
-function elementShortcut (tag, elementName, text, classes, attribute) {
-    var elementName = document.createElement(tag);
+function elementShortcut (tag,  text, classes, attribute, attributeStyle) {
+    let elementName = document.createElement(tag);
     elementName.textContent = (text)
     elementName.className = classes
-    elementName.setAttribute(attribute)
+    elementName.setAttribute(attribute, attributeStyle)
+    return elementName
+    
+
 
 }
-elementShortcut()
+// elementShortcut("div", "fakeElement", "I am Fake", "navItem", "href", "#")
+var set = elementShortcut("div", "I am Fake", "row", "href", "#")
+containerVar.append(set)
 
 </script>
 </body>
-</html>
+</html>       
