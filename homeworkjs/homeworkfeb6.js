@@ -24,11 +24,32 @@
 
 // ================== Assignment 3 - Square the Numbers
 
-function squareNums (array) {
-    let newArray = array.map(function(num) {
-        return num * 2
+// function squareNums (array) {
+//     let newArray = array.map(function(num) {
+//         return num * 2
+//     })
+//     return newArray
+// }
+
+// console.log(squareNums([1,2,3,4,5]))
+
+// ================== Assignment 4 - Cities 1
+
+var cities = [
+    { name: 'Los Angeles', temperature: 60.0},
+    { name: 'Atlanta', temperature: 52.0 },
+    { name: 'Detroit', temperature: 48.0 },
+    { name: 'New York', temperature: 80.0 } ];
+
+function pickcoldCities (array) {
+    let coldCities = array.filter(function(city){
+
+        return city.temperature < 70.0
     })
-    return newArray
+    return coldCities
 }
 
-console.log(squareNums([1,2,3,4,5]))
+console.log(pickcoldCities(cities))
+
+// ================== Assignment 5 - Cities 2
+
