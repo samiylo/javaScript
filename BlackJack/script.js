@@ -13,70 +13,70 @@ function createCard (cardName, cardSuit, cardValue, imagePath) {
 
     cards.push(cardInfo)
 }
-createCard("A", "Hearts", 1, <img src='images/AH.jpg'></img>);
-createCard("A", "Spades", 1, <img src='images/AS.jpg'></img>);
-createCard("A", "Clovers", 1, <img src='images/AC.jpg'></img>);
-createCard("A", "Diamonds", 1, <img src='images/AD.jpg'></img>);
+createCard("A", "Hearts", 1, src='images/AH.jpg');
+createCard("A", "Spades", 1, src='images/AS.jpg');
+createCard("A", "Clovers", 1, src='images/AC.jpg');
+createCard("A", "Diamonds", 1, src='images/AD.jpg');
 
-createCard("2", "Hearts", 2, <img src='images/2H.jpg'></img>);
-createCard("2", "Spades", 2, <img src='images/2S.jpg'></img>);
-createCard("2", "Clovers", 2, <img src='images/2C.jpg'></img>);
-createCard("2", "Diamons", 2, <img src='images/2D.jpg'></img>);
+createCard("2", "Hearts", 2, src='images/2H.jpg');
+createCard("2", "Spades", 2, src='images/2S.jpg');
+createCard("2", "Clovers", 2, src='images/2C.jpg');
+createCard("2", "Diamons", 2, src='images/2D.jpg');
 
-createCard("3", "Hearts", 3, <img src='images/3H.jpg'></img>);
-createCard("3", "Spades", 3, <img src='images/3S.jpg'></img>);
-createCard("3", "Clovers", 3, <img src='images/3C.jpg'></img>);
-createCard("3", "Diamons", 3, <img src='images/3D.jpg'></img>);
+createCard("3", "Hearts", 3, src='images/3H.jpg');
+createCard("3", "Spades", 3, src='images/3S.jpg');
+createCard("3", "Clovers", 3, src='images/3C.jpg');
+createCard("3", "Diamons", 3, src='images/3D.jpg');
 
-createCard("4", "Hearts", 4, <img src='images/4H.jpg'></img>);
-createCard("4", "Spades", 4, <img src='images/4S.jpg'></img>);
-createCard("4", "Clovers", 4, <img src='images/4C.jpg'></img>);
-createCard("4", "Diamonds", 4, <img src='images/4D.jpg'></img>);
+createCard("4", "Hearts", 4, src='images/4H.jpg');
+createCard("4", "Spades", 4, src='images/4S.jpg');
+createCard("4", "Clovers", 4, src='images/4C.jpg');
+createCard("4", "Diamonds", 4, src='images/4D.jpg');
 
-createCard("5", "Hearts", 5, <img src='images/5H.jpg'></img>);
-createCard("5", "Spades", 5, <img src='images/5S.jpg'></img>);
-createCard("5", "Clovers", 5, <img src='images/5C.jpg'></img>);
-createCard("5", "Diamonds", 5, <img src='images/5D.jpg'></img>);
+createCard("5", "Hearts", 5, src='images/5H.jpg');
+createCard("5", "Spades", 5, src='images/5S.jpg');
+createCard("5", "Clovers", 5, src='images/5C.jpg');
+createCard("5", "Diamonds", 5, src='images/5D.jpg');
 
-createCard("6", "Hearts", 6, <img src='images/6H.jpg'></img>);
-createCard("6", "Spades", 6, <img src='images/6S.jpg'></img>);
-createCard("6", "Clovers", 6, <img src='images/6C.jpg'></img>);
-createCard("6", "Diamonds", 6, <img src='images/6D.jpg'></img>);
+createCard("6", "Hearts", 6, src='images/6H.jpg');
+createCard("6", "Spades", 6, src='images/6S.jpg');
+createCard("6", "Clovers", 6, src='images/6C.jpg');
+createCard("6", "Diamonds", 6, src='images/6D.jpg');
 
-createCard("7", "Hearts", 7, <img src='images/7H.jpg'></img>);
-createCard("7", "Spades", 7, <img src='images/7S.jpg'></img>);
-createCard("7", "Clovers", 7, <img src='images/7C.jpg'></img>);
-createCard("7", "Diamonds", 7, <img src='images/7D.jpg'></img>);
+createCard("7", "Hearts", 7, src='images/7H.jpg');
+createCard("7", "Spades", 7, src='images/7S.jpg');
+createCard("7", "Clovers", 7, src='images/7C.jpg');
+createCard("7", "Diamonds", 7, src='images/7D.jpg');
 
-createCard("8", "Hearts", 8, <img src='images/8H.jpg'></img>);
-createCard("8", "Spades", 8, <img src='images/8S.jpg'></img>);
-createCard("8", "Clovers", 8, <img src='images/8C.jpg'></img>);
-createCard("8", "Diamonds", 8, <img src='images/8D.jpg'></img>);
+createCard("8", "Hearts", 8, src='images/8H.jpg');
+createCard("8", "Spades", 8, src='images/8S.jpg');
+createCard("8", "Clovers", 8, src='images/8C.jpg');
+createCard("8", "Diamonds", 8, src='images/8D.jpg');
 
-createCard("9", "Hearts", 9, <img src='images/9H.jpg'></img>);
-createCard("9", "Spades", 9, <img src='images/9S.jpg'></img>);
-createCard("9", "Clovers", 9, <img src='images/9C.jpg'></img>);
-createCard("9", "Diamonds", 9, <img src='images/9D.jpg'></img>);
+createCard("9", "Hearts", 9, src='images/9H.jpg');
+createCard("9", "Spades", 9, src='images/9S.jpg');
+createCard("9", "Clovers", 9, src='images/9C.jpg');
+createCard("9", "Diamonds", 9, src='images/9D.jpg');
 
-createCard("10", "Hearts", 10, <img src='images/10H.jpg'></img>);
-createCard("10", "Spades", 10, <img src='images/10S.jpg'></img>);
-createCard("10", "Clovers", 10, <img src='images/10C.jpg'></img>);
-createCard("10", "Diamonds", 10, <img src='images/10D.jpg'></img>);
+createCard("10", "Hearts", 10, src='images/10H.jpg');
+createCard("10", "Spades", 10, src='images/10S.jpg');
+createCard("10", "Clovers", 10, src='images/10C.jpg');
+createCard("10", "Diamonds", 10, src='images/10D.jpg');
 
-createCard("J", "Hearts", 10, <img src='images/JH.jpg'></img>);
-createCard("J", "Spades", 10, <img src='images/JS.jpg'></img>);
-createCard("J", "Clovers", 10, <img src='images/JC.jpg'></img>);
-createCard("J", "Diamonds", 10, <img src='images/JD.jpg'></img>);
+createCard("J", "Hearts", 10, src='images/JH.jpg');
+createCard("J", "Spades", 10, src='images/JS.jpg');
+createCard("J", "Clovers", 10, src='images/JC.jpg');
+createCard("J", "Diamonds", 10, src='images/JD.jpg');
 
-createCard("Q", "Hearts", 10, <img src='images/QH.jpg'></img>);
-createCard("Q", "Spades", 10, <img src='images/QS.jpg'></img>);
-createCard("Q", "Clovers", 10, <img src='images/QC.jpg'></img>);
-createCard("Q", "Diamonds", 10), <img src='images/QD.jpg'></img>;
+createCard("Q", "Hearts", 10, src='images/QH.jpg');
+createCard("Q", "Spades", 10, src='images/QS.jpg');
+createCard("Q", "Clovers", 10, src='images/QC.jpg');
+createCard("Q", "Diamonds", 10, src='images/QD.jpg');
 
-createCard("K", "Hearts", 10, <img src='images/KH.jpg'></img>);
-createCard("K", "Spades", 10, <img src='images/KS.jpg'></img>);
-createCard("K", "Clovers", 10, <img src='images/KC.jpg'></img>);
-createCard("K", "Diamonds", 10, <img src='images/KD.jpg'></img>);
+createCard("K", "Hearts", 10, src='images/KH.jpg');
+createCard("K", "Spades", 10, src='images/KS.jpg');
+createCard("K", "Clovers", 10, src='images/KC.jpg');
+createCard("K", "Diamonds", 10, src='images/KD.jpg');
 
 
 
