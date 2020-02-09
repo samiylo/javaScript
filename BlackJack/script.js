@@ -13,7 +13,7 @@ function createCard (cardName, cardSuit, cardValue, imagePath) {
 
     cards.push(cardInfo)
 }
-createCard("A", "Hearts", 1, <img src='images/AH.jpg'></img> );
+createCard("A", "Hearts", 1, <img src='images/AH.jpg'></img>);
 createCard("A", "Spades", 1, <img src='images/AS.jpg'></img>);
 createCard("A", "Clovers", 1, <img src='images/AC.jpg'></img>);
 createCard("A", "Diamonds", 1, <img src='images/AD.jpg'></img>);
@@ -63,20 +63,20 @@ createCard("10", "Spades", 10, <img src='images/10S.jpg'></img>);
 createCard("10", "Clovers", 10, <img src='images/10C.jpg'></img>);
 createCard("10", "Diamonds", 10, <img src='images/10D.jpg'></img>);
 
-createCard("J", "Hearts", 10);
-createCard("J", "Spades", 10);
-createCard("J", "Clovers", 10);
-createCard("J", "Diamonds", 10);
+createCard("J", "Hearts", 10, <img src='images/JH.jpg'></img>);
+createCard("J", "Spades", 10, <img src='images/JS.jpg'></img>);
+createCard("J", "Clovers", 10, <img src='images/JC.jpg'></img>);
+createCard("J", "Diamonds", 10, <img src='images/JD.jpg'></img>);
 
-createCard("Q", "Hearts", 10);
-createCard("Q", "Spades", 10);
-createCard("Q", "Clovers", 10);
-createCard("Q", "Diamonds", 10);
+createCard("Q", "Hearts", 10, <img src='images/QH.jpg'></img>);
+createCard("Q", "Spades", 10, <img src='images/QS.jpg'></img>);
+createCard("Q", "Clovers", 10, <img src='images/QC.jpg'></img>);
+createCard("Q", "Diamonds", 10), <img src='images/QD.jpg'></img>;
 
-createCard("K", "Hearts", 10);
-createCard("K", "Spades", 10);
-createCard("K", "Clovers", 10);
-createCard("K", "Diamonds", 10);
+createCard("K", "Hearts", 10, <img src='images/KH.jpg'></img>);
+createCard("K", "Spades", 10, <img src='images/KS.jpg'></img>);
+createCard("K", "Clovers", 10, <img src='images/KC.jpg'></img>);
+createCard("K", "Diamonds", 10, <img src='images/KD.jpg'></img>);
 
 
 
