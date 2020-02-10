@@ -146,12 +146,41 @@ function hit() {
     let pointsNode = document.getElementById('player-points');
     pointsNode.textContent = playerPoints
 
+    if (dealerPoints == 21) {
+        alert("You have lost!")
+    }
+
+    else if (playerPoints >= 22) {
+        alert("You Have Lost!")
+    }
+
 }
 
 var dealButtonNode = document.getElementById('deal-button');
 var hitButtonNode = document.getElementById('hit-button')
+var standButtonNode = document.getElementById('stand-button')
 
-// ========================================================= Start Stand Button
+// ========================================================= Start Stand Function
+function stand() {
+    if (playerPoints == 21) {
+        alert("You have won!")
+    }
+    else if (dealerPoints == 21) {
+        alert("You have lost!")
+    }
+
+    else if (playerPoints > 21) {
+        alert ("You have lost!")
+    }
+
+    else if (playerPoints > dealerPoints) {
+        alert("You have won")
+    }
+    else {
+        alert("You have lost!")
+    }
+}
+// ========================================================= Start Event Listeners
 
 dealButtonNode.addEventListener('click', function(event) {
     
@@ -161,13 +190,10 @@ dealButtonNode.addEventListener('click', function(event) {
 hitButtonNode.addEventListener('click', function(event){
     hit();
     
-    if (playerPoints >= 22) {
-        alert("You Have Lost!")
-    }
 })
 
-standButtonNode = document.addEventListener('click', function(event) {
-    console.log("Pasive")
+standButtonNode.addEventListener('click', function(event) {
+    stand();
 })
 
 
