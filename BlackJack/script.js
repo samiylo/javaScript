@@ -1,6 +1,5 @@
 var cards = []
-// var playerHand = []
-// var dealerHand = []
+
 
 
 function createCard (cardName, cardSuit, cardValue, imagePath) {
@@ -78,6 +77,13 @@ createCard("K", "Spades", 10, src='images/KS.jpg');
 createCard("K", "Clovers", 10, src='images/KC.jpg');
 createCard("K", "Diamonds", 10, src='images/KD.jpg');
 
+// ========================================================= Shuffle Function
+
+function shuffle(arr) {
+    arr.sort(() => Math.random() -0.5);
+}
+shuffle(cards);
+
 
 
 // ========================================================= Start Deal Function
@@ -116,6 +122,8 @@ function deal() {
     dealerHand.appendChild(dealerimageNode2);
     playerHand.appendChild(playerimageNode2);
 }
+
+// ========================================================= Start Hit Function
 
 function hit() {
     let playerCard = cards.pop();
