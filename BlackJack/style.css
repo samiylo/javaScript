@@ -17,13 +17,6 @@ img {
     
 }
 
-
-.buttons {
-    
-    margin-top: 20px;
-    justify-content: center;
-}
-
 .points {
     
     width: 100%;
@@ -36,4 +29,10 @@ img {
     width: 95%;
     height: 150px;
     background-color: #235789;
+}
+
+.buttons {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
 }
