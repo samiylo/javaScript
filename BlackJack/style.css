@@ -9,8 +9,9 @@ img {
 }
 
 #table {
-    
-    height: 800px;
+    display: block;
+    margin: 20px;
+    min-height: 800px;
     width: 100%;
     background-color: #F1D302;
     
@@ -32,7 +33,7 @@ img {
 .hand {
     
     margin-left: 20px;
-    width: 100%;
+    width: 95%;
     height: 150px;
     background-color: #235789;
 }
