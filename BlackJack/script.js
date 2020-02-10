@@ -1,7 +1,7 @@
-let cards = [
+var cards = []
+// var playerHand = []
+// var dealerHand = []
 
-
-]
 
 function createCard (cardName, cardSuit, cardValue, imagePath) {
     let cardInfo = {
@@ -82,4 +82,25 @@ createCard("K", "Diamonds", 10, src='images/KD.jpg');
 
 
 console.log(cards)
+
+var dealButtonNode = document.getElementById('deal-button');
+
+dealButtonNode.addEventListener('click', function(event) {
+    // ============================================== Star Deal
+    let dealerHand = document.getElementById('dealer-hand');
+    let playerHand = document.getElementById('player-hand');
+
+    let dealercard = cards.pop()
+    let playercard = cards.pop()
+    
+    let dealerimageNode = document.createElement('img');
+    dealerimageNode.setAttribute('src', dealercard.Image)
+    let playerimageNode = document.createElement('img');
+    playerimageNode.setAttribute('src', playercard.Image)
+
+    dealerHand.appendChild(dealerimageNode);
+    playerHand.appendChild(playerimageNode);
+    
+})
+
 

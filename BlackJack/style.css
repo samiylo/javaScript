@@ -1,0 +1,38 @@
+body {
+    height: 1000px;
+    background-color: blueviolet;
+}
+
+img {
+    height: 140px;
+    margin: 5px;
+}
+
+#table {
+    
+    height: 800px;
+    width: 100%;
+    background-color: #F1D302;
+    
+}
+
+
+.buttons {
+    
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.points {
+    
+    width: 100%;
+    height: 50px;
+    
+}
+.hand {
+    
+    margin-left: 20px;
+    width: 100%;
+    height: 150px;
+    background-color: #235789;
+}
