@@ -80,27 +80,50 @@ createCard("K", "Diamonds", 10, src='images/KD.jpg');
 
 
 
+// ========================================================= Start Deal Function
 
-console.log(cards)
+function deal() {
+    var dealerHand = document.getElementById('dealer-hand');
+    var playerHand = document.getElementById('player-hand');
 
-var dealButtonNode = document.getElementById('deal-button');
+    let dealercard1 = cards.pop()
+    let playercard1 = cards.pop()
 
-dealButtonNode.addEventListener('click', function(event) {
-    // ============================================== Star Deal
-    let dealerHand = document.getElementById('dealer-hand');
-    let playerHand = document.getElementById('player-hand');
-
-    let dealercard = cards.pop()
-    let playercard = cards.pop()
+    let playercard2 = cards.pop()
+    let dealercard2 = cards.pop()
     
     let dealerimageNode = document.createElement('img');
-    dealerimageNode.setAttribute('src', dealercard.Image)
+    dealerimageNode.setAttribute('src', dealercard1.Image)
     let playerimageNode = document.createElement('img');
-    playerimageNode.setAttribute('src', playercard.Image)
+    playerimageNode.setAttribute('src', playercard1.Image)
+
+    let dealerimageNode2 = document.createElement('img');
+    dealerimageNode2.setAttribute('src', '/images/Red_back.jpg')
+    let playerimageNode2 = document.createElement('img');
+    playerimageNode2.setAttribute('src', playercard2.Image)
 
     dealerHand.appendChild(dealerimageNode);
     playerHand.appendChild(playerimageNode);
+    dealerHand.appendChild(dealerimageNode2);
+    playerHand.appendChild(playerimageNode2);
+}
+
+function hit() {
+    let playerCard = cards.pop();
+
+    let playerImageNode = document.createElement('img');
+    playerImageNode.setAttribute('src', playerCard.Image)
+
+    playerHand.app(playerimageNode)
+
+}
+
+var dealButtonNode = document.getElementById('deal-button');
+var hitButtonNode = document.getElementById('hit-button')
+
+dealButtonNode.addEventListener('click', function(event) {
     
+    deal();
 })
 
 
