@@ -82,15 +82,24 @@ createCard("K", "Diamonds", 10, src='images/KD.jpg');
 
 // ========================================================= Start Deal Function
 
+var dealerHand = document.getElementById('dealer-hand');
+var playerHand = document.getElementById('player-hand');
+
+
+var dealerPoints = 0
+var playerPoints = 0
+
 function deal() {
-    var dealerHand = document.getElementById('dealer-hand');
-    var playerHand = document.getElementById('player-hand');
 
     let dealercard1 = cards.pop()
     let playercard1 = cards.pop()
 
     let playercard2 = cards.pop()
     let dealercard2 = cards.pop()
+
+    dealerPoints += (dealercard1.Value) + (dealercard2.Value);
+    playerPoints += (playercard1.Value) + (playercard2.Value);
+    
     
     let dealerimageNode = document.createElement('img');
     dealerimageNode.setAttribute('src', dealercard1.Image)
@@ -111,10 +120,13 @@ function deal() {
 function hit() {
     let playerCard = cards.pop();
 
+    playerPoints += playerCard.Value
+    
+
     let playerImageNode = document.createElement('img');
     playerImageNode.setAttribute('src', playerCard.Image)
 
-    playerHand.app(playerimageNode)
+    playerHand.appendChild(playerImageNode)
 
 }
 
@@ -124,6 +136,10 @@ var hitButtonNode = document.getElementById('hit-button')
 dealButtonNode.addEventListener('click', function(event) {
     
     deal();
+})
+
+hitButtonNode.addEventListener('click', function(event){
+    hit();
 })
 
 
