@@ -121,6 +121,12 @@ function deal() {
     playerHand.appendChild(playerimageNode);
     dealerHand.appendChild(dealerimageNode2);
     playerHand.appendChild(playerimageNode2);
+
+    let pointsNode = document.getElementById('player-points');
+    pointsNode.textContent = playerPoints
+
+    let dealpointsNode = document.getElementById('dealer-points');
+    dealpointsNode.textContent = dealerPoints
 }
 
 // ========================================================= Start Hit Function
@@ -130,16 +136,22 @@ function hit() {
 
     playerPoints += playerCard.Value
     
+    
 
     let playerImageNode = document.createElement('img');
     playerImageNode.setAttribute('src', playerCard.Image)
 
     playerHand.appendChild(playerImageNode)
 
+    let pointsNode = document.getElementById('player-points');
+    pointsNode.textContent = playerPoints
+
 }
 
 var dealButtonNode = document.getElementById('deal-button');
 var hitButtonNode = document.getElementById('hit-button')
+
+// ========================================================= Start Stand Button
 
 dealButtonNode.addEventListener('click', function(event) {
     
@@ -148,6 +160,14 @@ dealButtonNode.addEventListener('click', function(event) {
 
 hitButtonNode.addEventListener('click', function(event){
     hit();
+    
+    if (playerPoints >= 22) {
+        alert("You Have Lost!")
+    }
+})
+
+standButtonNode = document.addEventListener('click', function(event) {
+    console.log("Pasive")
 })
 
 
