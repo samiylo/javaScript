@@ -1,6 +1,6 @@
 body {
     height: 1000px;
-    background: blueviolet;
+    background-image: url('images/backgroundImage.jpg');
     font-family: 'Odibee Sans', cursive;
 }
 
@@ -14,7 +14,25 @@ img {
     margin: 10px;
     min-height: 800px;
     width: 100%;
-    background-color: #548687;
+    background-color: rgba(69, 116, 116, 0.7);
+    
+    
+}
+.messages {
+    height: 50px;
+    color: white;
+    font-size: 26px;
+    font-family: 'Odibee Sans', cursive;
+    background-color: #473335;
+    opacity: .7;
+}
+
+.label {
+    font-size: 26px;
+    font-family: 'Odibee Sans', cursive;
+    color: #FCAA67;
+    align-self: center;
+    text-align: right;
     
 }
 
@@ -23,6 +41,9 @@ img {
     padding-left: 30px;
     width: 100%;
     height: 50px;
+    color: #FFFFC7;
+    font-family: 'Odibee Sans', cursive;
+    font-size: 26px;
     
 }
 .hand {
@@ -30,7 +51,7 @@ img {
     margin-left: 20px;
     width: 95%;
     height: 150px;
-    background-color: #235789;
+    background-color: #FCAA67;
 }
 
 .buttons {
@@ -44,7 +65,7 @@ img {
     height: 50px;
     margin: 20px;
     color: #FFFFC7;
-    font-size: 26px;
+    font-size: 20px;
     font-family: 'Odibee Sans', cursive;
     padding: 10px;
     background-color: #B0413E;
