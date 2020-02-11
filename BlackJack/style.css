@@ -20,6 +20,7 @@ img {
 }
 .messages {
     height: 50px;
+    margin: 20px;
     color: white;
     font-size: 26px;
     font-family: 'Odibee Sans', cursive;
@@ -28,7 +29,7 @@ img {
 }
 .messagesWin {
     height: 50px;
-    
+    margin: 20px;
     color: white;
     font-size: 26px;
     font-family: 'Odibee Sans', cursive;
@@ -37,7 +38,7 @@ img {
 }
 .messagesLose {
     height: 50px;
-    
+    margin: 20px;
     color: white;
     font-size: 26px;
     font-family: 'Odibee Sans', cursive;
