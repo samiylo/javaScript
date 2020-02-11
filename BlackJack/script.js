@@ -92,7 +92,7 @@ function youWin (){
     
     console.log(prompt)
     promptNode.textContent = "You have won the game!"
-    
+    promptNode.setAttribute('class', 'messagesWin')
 
 }
 
@@ -101,6 +101,7 @@ function youLose () {
     
     console.log(prompt)
     promptNode.textContent = "You have lost the game!"
+    promptNode.setAttribute('class', 'messagesLose')
 }
 
 
