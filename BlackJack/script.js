@@ -77,6 +77,29 @@ createCard("K", "Spades", 10, src='images/KS.jpg');
 createCard("K", "Clovers", 10, src='images/KC.jpg');
 createCard("K", "Diamonds", 10, src='images/KD.jpg');
 
+// ========================================================= Global Variables
+
+// let betNode = document.getElementById('bet-ammount');
+// let walletNode = document.getElementById('wallet');
+
+// var wallet = 0;
+
+// walletNode.textContent = wallet
+
+// var betAmmount = betNode;
+
+var dealerHand = document.getElementById('dealer-hand');
+var playerHand = document.getElementById('player-hand');
+
+
+var dealerPoints = 0
+var playerPoints = 0
+
+var dealercard2 = cards.pop()
+var dealerimageNode2 = document.createElement('img');   // This card will flip latter on
+
+var gameOverCounter = 0 // This will record if the game has finished, and will be use in a for loop.
+
 // ========================================================= Shuffle Function
 
 function shuffle(arr) {
@@ -90,9 +113,11 @@ var promptNode = document.querySelector('#prompt');
 
 function youWin (){
     
-    console.log(prompt)
+    console.log(prompt);
+    
     promptNode.textContent = "You have won the game!"
     promptNode.setAttribute('class', 'messagesWin')
+
 
 }
 
@@ -100,24 +125,14 @@ function youWin (){
 function youLose () {
     
     console.log(prompt)
+
+
     promptNode.textContent = "You have lost the game!"
     promptNode.setAttribute('class', 'messagesLose')
 }
 
 
 // ========================================== Start Deal Function
-
-var dealerHand = document.getElementById('dealer-hand');
-var playerHand = document.getElementById('player-hand');
-
-
-var dealerPoints = 0
-var playerPoints = 0
-
-var dealercard2 = cards.pop()
-var dealerimageNode2 = document.createElement('img');   // This card will flip latter on
-
-var gameOverCounter = 0 // This will record if the game has finished, and will be use in a for loop.
 
 function deal() {
 
