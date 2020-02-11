@@ -1,6 +1,7 @@
 body {
     height: 1000px;
     background: blueviolet;
+    font-family: 'Odibee Sans', cursive;
 }
 
 img {
@@ -39,11 +40,28 @@ img {
     height: 60px
 }
 
+#new-game {
+    height: 50px;
+    margin: 20px;
+    color: #FFFFC7;
+    font-size: 26px;
+    font-family: 'Odibee Sans', cursive;
+    padding: 10px;
+    background-color: #B0413E;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#new-game:hover {
+    background-color: rgb(214, 81, 77);
+    border: 5px solid #FCAA67 ;
+}
+
 #deal-button {
 
     margin-left: -20px;
     color: #FFFFC7;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 26px;
+    font-family: 'Odibee Sans';
     padding: 10px;
     background-color: #B0413E;
     border-radius: 8px;
@@ -57,7 +75,8 @@ img {
 #hit-button {
     margin-left: 10px;
     color: #FFFFC7;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 26px;
+    font-family: 'Odibee Sans', cursive;
     padding: 10px;
     background-color: #B0413E;
     border-radius: 8px;
@@ -72,7 +91,8 @@ img {
 #stand-button {
     margin-left: 10px;
     color: #FFFFC7;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 26px;
+    font-family: 'Odibee Sans', cursive;
     padding: 10px;
     background-color: #B0413E;
     border-radius: 8px;
