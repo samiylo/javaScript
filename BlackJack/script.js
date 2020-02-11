@@ -84,9 +84,27 @@ function shuffle(arr) {
 }
 shuffle(cards);
 
+// ========================================================= Start Lose Win Prompt Function
+
+var promptNode = document.querySelector('#prompt');
+
+function youWin (){
+    
+    console.log(prompt)
+    promptNode.textContent = "You have won the game!"
+    
+
+}
 
 
-// ========================================================= Start Deal Function
+function youLose () {
+    
+    console.log(prompt)
+    promptNode.textContent = "You have lost the game!"
+}
+
+
+// ========================================== Start Deal Function
 
 var dealerHand = document.getElementById('dealer-hand');
 var playerHand = document.getElementById('player-hand');
@@ -97,6 +115,8 @@ var playerPoints = 0
 
 var dealercard2 = cards.pop()
 var dealerimageNode2 = document.createElement('img');   // This card will flip latter on
+
+var gameOverCounter = 0 // This will record if the game has finished, and will be use in a for loop.
 
 function deal() {
 
@@ -128,8 +148,8 @@ function deal() {
     let pointsNode = document.getElementById('player-points');
     pointsNode.textContent = playerPoints
 
-    let dealpointsNode = document.getElementById('dealer-points');
-    dealpointsNode.textContent = dealerPoints
+    // let dealpointsNode = document.getElementById('dealer-points');
+    // dealpointsNode.textContent = dealerPoints
 }
 
 // ========================================================= Start Hit Function
@@ -151,12 +171,20 @@ function hit() {
 
     if (dealerPoints == 21) {
         flipCard();
-        alert("You have lost!")
+        let dealpointsNode = document.getElementById('dealer-points');
+        dealpointsNode.textContent = dealerPoints
+        youLose();
+        gameOverCounter += 1
+        // alert("You have lost!")
     }
 
     else if (playerPoints >= 22) {
         flipCard();
-        alert("You have lost!")
+        let dealpointsNode = document.getElementById('dealer-points');
+        dealpointsNode.textContent = dealerPoints
+        youLose();
+        gameOverCounter += 1
+        // alert("You ave lost!")
     }
 
 }
@@ -175,32 +203,48 @@ function flipCard () {
 // ========================================================= Start Stand Function
 function stand() {
     if (playerPoints == 21) {
-        alert("You have won!")
+        flipCard();
+        youWin();
+        gameOverCounter += 1
+        // alert("You have won!")
 
         
     }
     else if (dealerPoints == 21) {
         flipCard();
-        alert("You have lost!")
+        youLose();
+        gameOverCounter += 1
+        // alert("You have lost!")
     }
 
     else if (playerPoints > 21) {
         flipCard();
-        alert ("You have lost!")
+        youLose();
+        gameOverCounter += 1
+        // alert ("You have lost!")
     }
 
     else if (playerPoints > dealerPoints) {
         flipCard();
-        alert("You have won")
+        youWin();
+        gameOverCounter += 1
+        // alert("You have won")
     }
     else {
         flipCard();
-        alert("You have lost!")
+        youLose();
+        gameOverCounter += 1
+        // alert("You have lost!")
     }
+    let dealpointsNode = document.getElementById('dealer-points');
+    dealpointsNode.textContent = dealerPoints
 
 
 }
+
+
 // ========================================================= Start Event Listeners
+
 
 var dealCounter = 0
 dealButtonNode.addEventListener('click', function(event) {
@@ -215,12 +259,22 @@ dealButtonNode.addEventListener('click', function(event) {
 })
 
 hitButtonNode.addEventListener('click', function(event){
+    if (gameOverCounter < 1) {
     hit();
+    }
+    else {
+        console.log("Game Over")
+    }
     
 })
 
 standButtonNode.addEventListener('click', function(event) {
+    if (gameOverCounter < 1) {
     stand();
+    }
+    else {
+        console.log("Game Over")
+    }
 })
 
 
