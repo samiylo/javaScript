@@ -1,6 +1,6 @@
 body {
     height: 1000px;
-    background-color: blueviolet;
+    background: blueviolet;
 }
 
 img {
@@ -10,10 +10,10 @@ img {
 
 #table {
     display: block;
-    margin: 20px;
+    margin: 10px;
     min-height: 800px;
     width: 100%;
-    background-color: #F1D302;
+    background-color: #548687;
     
 }
 
@@ -36,4 +36,49 @@ img {
     display: flex;
     margin-top: 20px;
     justify-content: center;
+    height: 60px
+}
+
+#deal-button {
+
+    margin-left: -20px;
+    color: #FFFFC7;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 10px;
+    background-color: #B0413E;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#deal-button:hover {
+    background-color: rgb(214, 81, 77);
+    border: 5px solid #FCAA67 ;
+}
+
+#hit-button {
+    margin-left: 10px;
+    color: #FFFFC7;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 10px;
+    background-color: #B0413E;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#hit-button:hover {
+    border: 5px solid #FCAA67 ;
+    background-color: rgb(214, 81, 77)
+    
+}
+
+#stand-button {
+    margin-left: 10px;
+    color: #FFFFC7;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 10px;
+    background-color: #B0413E;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#stand-button:hover {
+    border: 5px solid #FCAA67 ;
+    background-color: rgb(214, 81, 77)
 }

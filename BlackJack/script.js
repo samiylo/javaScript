@@ -156,7 +156,7 @@ function hit() {
 
     else if (playerPoints >= 22) {
         flipCard();
-        alert("You Have Lost!")
+        alert("You have lost!")
     }
 
 }
@@ -202,9 +202,16 @@ function stand() {
 }
 // ========================================================= Start Event Listeners
 
+var dealCounter = 0
 dealButtonNode.addEventListener('click', function(event) {
     
-    deal();
+    if (dealCounter < 1) {
+        deal();
+        dealCounter++
+    }
+    else{
+        alert('You can only deal at the beginning of the game.')
+    }
 })
 
 hitButtonNode.addEventListener('click', function(event){
