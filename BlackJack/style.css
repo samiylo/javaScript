@@ -18,7 +18,8 @@ img {
 }
 
 .points {
-    
+    /* background-color: blueviolet; */
+    padding-left: 30px;
     width: 100%;
     height: 50px;
     

@@ -95,13 +95,16 @@ var playerHand = document.getElementById('player-hand');
 var dealerPoints = 0
 var playerPoints = 0
 
+var dealercard2 = cards.pop()
+var dealerimageNode2 = document.createElement('img');   // This card will flip latter on
+
 function deal() {
 
     let dealercard1 = cards.pop()
     let playercard1 = cards.pop()
 
     let playercard2 = cards.pop()
-    let dealercard2 = cards.pop()
+    
 
     dealerPoints += (dealercard1.Value) + (dealercard2.Value);
     playerPoints += (playercard1.Value) + (playercard2.Value);
@@ -112,8 +115,8 @@ function deal() {
     let playerimageNode = document.createElement('img');
     playerimageNode.setAttribute('src', playercard1.Image)
 
-    let dealerimageNode2 = document.createElement('img');
     dealerimageNode2.setAttribute('src', '/images/Red_back.jpg')
+    dealerimageNode2.setAttribute('id', 'flip-card')
     let playerimageNode2 = document.createElement('img');
     playerimageNode2.setAttribute('src', playercard2.Image)
 
@@ -147,10 +150,12 @@ function hit() {
     pointsNode.textContent = playerPoints
 
     if (dealerPoints == 21) {
+        flipCard();
         alert("You have lost!")
     }
 
     else if (playerPoints >= 22) {
+        flipCard();
         alert("You Have Lost!")
     }
 
@@ -160,25 +165,40 @@ var dealButtonNode = document.getElementById('deal-button');
 var hitButtonNode = document.getElementById('hit-button')
 var standButtonNode = document.getElementById('stand-button')
 
+// ========================================================= Start Flip Function
+
+function flipCard () {
+    dealerimageNode2.setAttribute('src', dealercard2.Image)
+    
+}
+
 // ========================================================= Start Stand Function
 function stand() {
     if (playerPoints == 21) {
         alert("You have won!")
+
+        
     }
     else if (dealerPoints == 21) {
+        flipCard();
         alert("You have lost!")
     }
 
     else if (playerPoints > 21) {
+        flipCard();
         alert ("You have lost!")
     }
 
     else if (playerPoints > dealerPoints) {
+        flipCard();
         alert("You have won")
     }
     else {
+        flipCard();
         alert("You have lost!")
     }
+
+
 }
 // ========================================================= Start Event Listeners
 
