@@ -2,36 +2,36 @@
 
 // =================== Assignment 1 -  Positive Numbers
 
-// function positiveNums (array) {
-//     let newArray = array.filter(function(num) {
-//         return num > 0
-//     })
-//     return newArray
-// }
+let positiveNums = (array) => {
+    let newArray = array.filter(function(num) {
+        return num > 0
+    })
+    return newArray
+}
 
-// console.log(positiveNums([1,2,3, -9, -46]))
+console.log(positiveNums([1,2,3, -9, -46]))
 
 // ================== Assignment 2 - Even Numbers
 
-// function evenNums (array) {
-//     let newArray = array.filter(function(num) {
+let evenNums = (array) => {
+    let newArray = array.filter(function(num) {
         
-//         return num % 2 == 0
-//     })
-//     return newArray
-// }
-// console.log(evenNums([1,2,3, -9, 4, 6]))
+        return num % 2 == 0
+    })
+    return newArray
+}
+console.log(evenNums([1,2,3, -9, 4, 6]))
 
 // ================== Assignment 3 - Square the Numbers
 
-// function squareNums (array) {
-//     let newArray = array.map(function(num) {
-//         return num * 2
-//     })
-//     return newArray
-// }
+let squareNums = (array) => {
+    let newArray = array.map(function(num) {
+        return num * 2
+    })
+    return newArray
+}
 
-// console.log(squareNums([1,2,3,4,5]))
+console.log(squareNums([1,2,3,4,5]))
 
 // ================== Assignment 4 - Cities 1
 
@@ -41,7 +41,7 @@ var cities = [
     { name: 'Detroit', temperature: 48.0 },
     { name: 'New York', temperature: 80.0 } ];
 
-function pickcoldCities (array) {
+let pickcoldCities = (array)=> {
     let coldCities = array.filter(function(city){
 
         return city.temperature < 70.0
